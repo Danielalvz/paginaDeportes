@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 /* HEADER */
@@ -21,6 +22,7 @@ header {
 .marca {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 10px;
     color: #232C50;
 }
@@ -51,6 +53,7 @@ header nav ul {
     text-align: center;
     gap: 2em;
     cursor: pointer;
+    font-size: 0.8em;
 }
 
 header a {
@@ -109,17 +112,18 @@ header .btnPagina {
 }
 
 .portadaPrincipal h2 {
-    font-size: 50px;
+    font-size: 2.7em;
+    font-weight: 700;
+    color: #323851;
 }
 
 .portadaPrincipal div p {
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .txtMobile {
     display: none;
 }
-
 
 .portadaPrincipal div .btnPagina {
     width: 40%;
@@ -147,7 +151,7 @@ header .btnPagina {
 }
 
 .sectionPros p {
-    width: 25%;
+    width: 33%;
 }
 
 /* informacion*/
@@ -203,6 +207,7 @@ header .btnPagina {
     color: #242E53;
     margin-top: 97px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .destacados {
@@ -211,7 +216,6 @@ header .btnPagina {
     justify-content: center;
     align-items: center;
     position: relative;
-
     margin: 0 auto;
 }
 
@@ -219,7 +223,7 @@ header .btnPagina {
     background-color: #FAFAFA;
     text-align: center;
     width: 30%;
-    padding: 50px 56px 17px;
+    padding: 50px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -335,11 +339,11 @@ footer .containerContacto {
 footer p {
     color: #8C8C94;
     text-align: end;
-    margin: 0 5em;
+    margin: 0 8%;
     padding-bottom: 2em;
 }
 
-/* RESPONSIVE */
+/* RESPONSIVE MOBILE*/
 @media screen and (max-width: 600px) {
 
     /* HEADER */
@@ -389,15 +393,12 @@ footer p {
         display: none;
     }
 
-    /* -----------------------------*/
-
     /* MAIN */
 
     /* portadaPrincipal */
     .portadaPrincipal {
-        margin-top: 30px;
-        margin-bottom: 40px;
-
+        margin-top: 2em;
+        margin-bottom: 3em;
     }
 
     .portadaPrincipal img {
@@ -505,7 +506,7 @@ footer p {
     }
 
     /* FOOTER */
-    footer > section {
+    footer>section {
         flex-wrap: wrap-reverse;
         justify-content: space-around;
         padding-top: 40px;
@@ -523,9 +524,9 @@ footer p {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 3em; 
+        gap: 3em;
     }
-    
+
     footer .containerContacto {
         flex-flow: wrap-reverse;
         padding-bottom: 4em;
@@ -534,5 +535,69 @@ footer p {
     footer p {
         padding: 3em 0;
         text-align: center;
+    }
+}
+
+/* RESPONSIVE CELULAR MUY PEQUEÑO */
+@media screen and (max-width: 300px) {
+    * {
+        font-size: 12px;
+    }
+
+    footer .inbox {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* RESPONSIVE TABLETS */
+@media screen and (min-width: 750px) and (max-width: 912px) {
+
+    * {
+        font-size: 14px;
+    }
+
+    /* Main */
+    .portadaPrincipal {
+        margin-top: 100px
+    }
+    .portadaPrincipal h2 {
+        font-size: 1.8em;
+    }
+
+    .sectionPros {
+        gap: 0;
+        justify-content: space-around;
+        padding: 0 30px;
+    }
+
+    .sectionPros h3 {
+        width: 50%;
+    }
+
+    .sectionPros p {
+        width: 50%;
+    }
+
+    .informacion .seccionInformacion {
+        width: 45%;
+    }
+
+    .informacion .seccionDetalle {
+        padding: 0;
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+
+    .destacados {
+        width: 90%;
+    }
+
+    .personasDestacadas {
+        width: 70%;
+        padding: 50px 20px;
     }
 }
