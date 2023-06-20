@@ -71,7 +71,6 @@ header a:hover {
     color: white;
     border: none;
     border-radius: 3em;
-    /* padding: 1em 3.5em; */
     width: 134px;
     height: 44px;
     cursor: pointer;
@@ -185,7 +184,6 @@ header .btnPagina {
 .informacion .btnPagina {
     width: 70px;
     height: 40px;
-    /* padding: 20px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -425,11 +423,11 @@ footer p {
     }
 
     .sectionPros h3 {
-        width: 60%;
+        width: 100%;
     }
 
     .sectionPros p {
-        width: 75%;
+        width: 100%;
     }
 
     .txtPc {
