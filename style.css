@@ -126,9 +126,6 @@ header .btnPagina {
 
 .portadaPrincipal div .btnPagina {
     width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* sectionPros */
@@ -303,6 +300,13 @@ footer .containerLogos {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+
+footer .redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8em;
 }
 
 footer ul {
@@ -525,9 +529,6 @@ footer p {
     }
 
     footer .redes {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         gap: 3em;
     }
 
